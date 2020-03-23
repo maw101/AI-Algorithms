@@ -34,16 +34,16 @@ public class ExampleUsage {
          List<DataRecord> dataRecords = new ArrayList<>();
 
          // add each data record in turn
-         for (int i = 1; i <= values.length; i++) {
+         for (int i = 0; i < values.length; i++) {
             tempFeatureMap = new HashMap<>(
                     Map.ofEntries(
-                            new AbstractMap.SimpleEntry<>("value", values[i - 1])
+                            new AbstractMap.SimpleEntry<>("value", values[i])
                     )
             );
 
-            dataRecords.add(new DataRecord(String.valueOf(values[i - 1]), tempFeatureMap));
+            dataRecords.add(new DataRecord(String.valueOf(values[i]), tempFeatureMap));
 
-            System.out.println(dataRecords.get(i-1));
+            System.out.println(dataRecords.get(i));
          }
 
       // create example centroids
