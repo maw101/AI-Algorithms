@@ -4,6 +4,33 @@ A Collection of Artificial Intelligence Algorithm Implementations
 ## [K-Means](https://en.wikipedia.org/wiki/K-means_clustering)
 [Java Implementation](src/kmeans)
 
+### Example
+#### One-Dimensional Example
+Example utilises integers along a 1-D number line.
+
+Value Set: {6, 8, 18, 26, 13, 32, 24}
+Initial Centroid Values: {11, 20}
+K Value: 2
+
+Example Final Output:
+```
+Centroid (value=25.0) Record Identifiers: [18.0, 26.0, 32.0, 24.0]
+Centroid (value=9.0) Record Identifiers: [6.0, 8.0, 13.0]
+```
+
+#### Two-Dimensional Example
+Example utilises integer points on a 2-D space. Each value represents a coordinate {X, Y}.
+
+Value Set: {{185, 72}, {170, 56}, {168, 60}, {179, 68}, {182, 72}, {188, 77}}
+Initial Centroid Values: {{185, 72}, {170, 56}}
+K Value: 2
+
+Example Final Output:
+```
+Centroid (X=169.0, Y=58.0) Record Identifiers: [2, 3]
+Centroid (X=183.5, Y=72.25) Record Identifiers: [1, 4, 5, 6]
+```
+
 ## [Particle Swarm Optimisation](https://en.wikipedia.org/wiki/Particle_swarm_optimization)
 [Python Implementation](src/pso-python/particle_swarm_optimisation.py)
 
