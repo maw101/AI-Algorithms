@@ -3,3 +3,36 @@ A Collection of Artificial Intelligence Algorithm Implementations
 
 ## [K-Means](https://en.wikipedia.org/wiki/K-means_clustering)
 [Java Implementation](src/kmeans)
+
+## [Particle Swarm Optimisation](https://en.wikipedia.org/wiki/Particle_swarm_optimization)
+[Python Implementation](src/pso-python/particle_swarm_optimisation.py)
+
+Initially all particles in the search space are given a random X-Y position ([-50,+50], [-50,+50]). Our initial global best position is also given a random X-Y position in this range.
+
+During each iteration for each Particle we calculate a new velocity and move the Particle in this direction. Velocities are calculated by weighting by a random portion in the direction of the particle's best position, then by weighting a random porition in the direction of the global best position and then adding this to the particle's current velocity.
+Each of these values are multiplied by their own compensation value to give each an influence in the updated velocity - i.e. Global Best has the highest share, followed by the particle's personal best, followed by the current velocity of the particle.
+
+### Example
+
+This example uses 30 particles over a maximum of 50 iterations to find the best solution to the problem at hand.
+
+Our boundary condition for exit is that the absolute difference between our target value (2) and our current best fitness value be less than or equal to 1e-10.
+
+The red diamond represents the current best global position. We can see in later iterations that the swarm comes in much closer to this value as we start to reach our solution.
+
+![](src/pso-python/pso_demo.gif)
+
+Example Output:
+```
+Enter the boundary either side of the target to allow exit at: 1e-10
+
+Enter the number of particles: 30
+
+Enter the maximum number of iterations: 50
+<Figure size 432x288 with 0 Axes>
+...
+<Figure size 432x288 with 0 Axes>
+Iterations: 41
+Best Solution: [8.84725554e-06 2.09113259e-06] with value 2.000000000082647
+<Figure size 432x288 with 0 Axes>
+```
