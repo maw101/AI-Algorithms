@@ -29,8 +29,8 @@ Enter the maximum number of iterations: 50
 <Figure size 432x288 with 0 Axes>
 ...
 <Figure size 432x288 with 0 Axes>
-Iterations: 41
-Best Solution: [8.84725554e-06 2.09113259e-06] with value 2.000000000082647
+Iterations: 36
+Best Solution: [ 1.02369730e-06 -9.40186064e-06] with value 2.000000000089443
 <Figure size 432x288 with 0 Axes>
 ```
 
