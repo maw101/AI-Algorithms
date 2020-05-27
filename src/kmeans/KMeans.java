@@ -46,7 +46,7 @@ public class KMeans {
          }
 
          // check to see if our clusters have remained the same
-         if (currentClusters == previousClusters) {
+         if (currentClusters.equals(previousClusters)) {
             break;
          }
 
@@ -65,7 +65,7 @@ public class KMeans {
          System.out.println("Current Clusters: ");
          printClusterCollectionSummary(currentClusters);
 
-      } while (currentClusters != previousClusters);
+      } while (!currentClusters.equals(previousClusters));
 
       System.out.println("FINAL Clusters: ");
       printClusterCollectionSummary(currentClusters);
