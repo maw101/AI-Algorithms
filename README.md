@@ -20,7 +20,7 @@ The red diamond represents the current best global position. We can see in later
 ![](src/pso-python/pso_demo.gif)
 
 Example Output:
-```
+```text
 Enter the boundary either side of the target to allow exit at: 1e-10
 
 Enter the number of particles: 30
@@ -46,7 +46,7 @@ Initial Centroid Values: {11, 20}
 K Value: 2
 
 Example Final Output:
-```
+```text
 Centroid (value=25.0) Record Identifiers: [18.0, 26.0, 32.0, 24.0]
 Centroid (value=9.0) Record Identifiers: [6.0, 8.0, 13.0]
 ```
@@ -59,7 +59,7 @@ Initial Centroid Values: {{185, 72}, {170, 56}}
 K Value: 2
 
 Example Final Output:
-```
+```text
 Centroid (X=169.0, Y=58.0) Record Identifiers: [2, 3]
 Centroid (X=183.5, Y=72.25) Record Identifiers: [1, 4, 5, 6]
 ```
