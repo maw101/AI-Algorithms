@@ -67,3 +67,39 @@ Example Final Output:
 Centroid (X=169.0, Y=58.0) Record Identifiers: [2, 3]
 Centroid (X=183.5, Y=72.25) Record Identifiers: [1, 4, 5, 6]
 ```
+
+## Discrete Fuzzy Logic Model
+**[Python Implementation](src/fuzzy-set-logic/FuzzySet.py)**
+
+Provides a set of functions to manipulate discrete fuzzy logic sets represented in a vector notation.
+
+Each element is: `<membership value>/<element>`, this is converted into a tuple of: `(<membership value>, <element>)`.
+
+Provides methods for: INVERT, OR, AND, MAX, chop, determining a sets Centre of Gravity, getting an elements membership, and printing of the fuzzy set's data members.
+
+### Examples
+
+Examples are provided at the bottom of the script.
+
+#### Example 1
+
+Made up of two Fuzzy Sets (`A` and `B`).
+
+`A = {0.0/1, 0.4/2, 0.8/3, 1.0/4}`
+
+`B = {0.2/1, 0.2/2, 0.4/3, 0.5/4}`
+
+
+a) performs an AND operation on `A` and `B`
+b) performs the NOT operation on `A`
+c) performs the AND operation on the result of (b) and set `B`
+d) performs the OR operation on the result of (a) and the result of performing the AND operation on the result of (c)
+
+
+Example 1 Final Output:
+```text
+a) A AND B = [(0.0, 1), (0.2, 2), (0.4, 3), (0.5, 4)]
+b) NOT A = [(1.0, 1), (0.6, 2), (0.2, 3), (0.0, 4)]
+c) (NOT A) AND B = [(0.2, 1), (0.2, 2), (0.2, 3), (0.0, 4)]
+d) (A AND B) OR ((NOT A) AND B) = [(0.2, 1), (0.2, 2), (0.4, 3), (0.5, 4)]
+```
