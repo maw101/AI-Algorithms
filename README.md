@@ -41,8 +41,10 @@ Best Solution: [ 1.02369730e-06 -9.40186064e-06] with value 2.000000000089443
 #### One-Dimensional Example
 Example utilises integers along a 1-D number line.
 
-Value Set: {6, 8, 18, 26, 13, 32, 24}
-Initial Centroid Values: {11, 20}
+Value Set: `{6, 8, 18, 26, 13, 32, 24}`
+
+Initial Centroid Values: `{11, 20}`
+
 K Value: 2
 
 Example Final Output:
@@ -52,10 +54,12 @@ Centroid (value=9.0) Record Identifiers: [6.0, 8.0, 13.0]
 ```
 
 #### Two-Dimensional Example
-Example utilises integer points on a 2-D space. Each value represents a coordinate {X, Y}.
+Example utilises integer points on a 2-D space. Each value represents a coordinate `{X, Y}`.
 
-Value Set: {{185, 72}, {170, 56}, {168, 60}, {179, 68}, {182, 72}, {188, 77}}
-Initial Centroid Values: {{185, 72}, {170, 56}}
+Value Set: `{{185, 72}, {170, 56}, {168, 60}, {179, 68}, {182, 72}, {188, 77}}`
+
+Initial Centroid Values: `{{185, 72}, {170, 56}}`
+
 K Value: 2
 
 Example Final Output:
