@@ -17,7 +17,7 @@ Our boundary condition for exit is that the absolute difference between our targ
 
 The red diamond represents the current best global position. We can see in later iterations that the swarm comes in much closer to this value as we start to reach our solution.
 
-![](readme-gifs/pso_demo.gif)
+![](README_ASSETS/pso_demo.gif)
 
 Example Output:
 ```text
